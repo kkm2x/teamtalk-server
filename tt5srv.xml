@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<teamtalk version="5.21">
+    <general>
+        <server-name>Manus Permanent Server</server-name>
+        <motd>Welcome to your permanent TeamTalk server!</motd>
+        <max-users>1000</max-users>
+        <auto-save>true</auto-save>
+        <bind-ip />
+        <tcpport>10333</tcpport>
+        <udpport>10333</udpport>
+        <login-attempts>0</login-attempts>
+        <max-logins-per-ipaddr>0</max-logins-per-ipaddr>
+        <user-timeout>60</user-timeout>
+        <login-delay-msec>2000</login-delay-msec>
+    </general>
+    <file-storage>
+        <files-root>/opt/teamtalk/files</files-root>
+        <max-diskusage>0</max-diskusage>
+        <channel-diskquota>0</channel-diskquota>
+    </file-storage>
+    <logging>
+        <server-log-maxsize>-1</server-log-maxsize>
+    </logging>
+    <users>
+        <user>
+            <username>admin</username>
+            <password>password123</password>
+            <user-type>2</user-type>
+            <user-rights>0</user-rights>
+            <note />
+            <userdata>0</userdata>
+            <init-channel />
+            <audiocodec-bps-limit>0</audiocodec-bps-limit>
+        </user>
+    </users>
+    <permanent-channels>
+        <channel>
+            <channel-id>1</channel-id>
+            <password></password>
+            <topic>Main Channel</topic>
+            <diskquota>0</diskquota>
+            <op-password></op-password>
+            <max-users>1000</max-users>
+            <channel-type>1</channel-type>
+            <userdata>0</userdata>
+            <audio-codec>
+                <codec-type>1</codec-type>
+                <bandmode>1</bandmode>
+                <quality>4</quality>
+                <fpp>2</fpp>
+                <sim-stereo>false</sim-stereo>
+            </audio-codec>
+        </channel>
+    </permanent-channels>
+</teamtalk>

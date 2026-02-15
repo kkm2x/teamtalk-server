@@ -18,6 +18,7 @@ RUN mkdir -p /opt/teamtalk/files
 # فتح المنافذ (المنفذ 10333 هو الافتراضي)
 EXPOSE 10333/tcp
 EXPOSE 10333/udp
+EXPOSE 8080/tcp
 
 # تشغيل السيرفر
 CMD ["./server/tt5srv", "-nd", "-c", "tt5srv.xml"]

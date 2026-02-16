@@ -16,13 +16,13 @@ COPY tt5srv.xml /opt/teamtalk/tt5srv.xml
 RUN mkdir -p /opt/teamtalk/files
 
 # فتح المنافذ
-EXPOSE 8080/tcp
+EXPOSE 8000/tcp
 EXPOSE 10333/tcp
 EXPOSE 10333/udp
 
 # إنشاء سكربت تشغيل مزدوج (TeamTalk + Web Server لفحص الصحة)
 RUN echo '#!/bin/bash\n\
-python3 -m http.server 8080 & \n\
+python3 -m http.server 8000 & \n\
 ./server/tt5srv -nd -c tt5srv.xml\n\
 ' > /opt/teamtalk/entrypoint.sh && chmod +x /opt/teamtalk/entrypoint.sh
 

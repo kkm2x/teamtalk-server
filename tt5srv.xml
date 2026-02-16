@@ -6,8 +6,8 @@
         <max-users>1000</max-users>
         <auto-save>true</auto-save>
         <bind-ip />
-        <tcpport>8080</tcpport>
-        <udpport>8080</udpport>
+        <tcpport>8000</tcpport>
+        <udpport>8000</udpport>
         <login-attempts>0</login-attempts>
         <max-logins-per-ipaddr>0</max-logins-per-ipaddr>
         <user-timeout>60</user-timeout>
